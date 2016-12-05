@@ -1,0 +1,13 @@
+add_definitions(-DBUILDING_ANDROID)
+
+if (NOT ANDROID)
+    add_subdirectory(android/content)
+    add_subdirectory(android/graphics)
+    add_subdirectory(android/media)
+    add_subdirectory(android/opengl)
+    add_subdirectory(android/os)
+    add_subdirectory(android/util)
+    add_subdirectory(android/view)
+    add_subdirectory(android/widget)
+    add_subdirectory(java/lang)
+endif ()
